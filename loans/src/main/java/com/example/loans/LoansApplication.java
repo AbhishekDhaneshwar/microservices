@@ -12,14 +12,14 @@ import io.swagger.v3.oas.annotations.info.License;
 
 @SpringBootApplication
 /*
- * @ComponentScans({ @ComponentScan("com.eazybytes.loans.controller") })
+ * @ComponentScans({ @ComponentScan("com.loans.controller") })
  * 
- * @EnableJpaRepositories("com.eazybytes.loans.repository")
+ * @EnableJpaRepositories("com.loans.repository")
  * 
- * @EntityScan("com.eazybytes.loans.model")
+ * @EntityScan("com.loans.model")
  */
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
-@OpenAPIDefinition(info = @Info(title = "Loans microservice REST API Documentation", description = "EazyBank Loans microservice REST API Documentation", version = "v1", contact = @Contact(name = "Madan Reddy", email = "tutor@eazybytes.com", url = "https://www.eazybytes.com"), license = @License(name = "Apache 2.0", url = "https://www.eazybytes.com")), externalDocs = @ExternalDocumentation(description = "EazyBank Loans microservice REST API Documentation", url = "https://www.eazybytes.com/swagger-ui.html"))
+@OpenAPIDefinition(info = @Info(title = "Loans microservice REST API Documentation", description = "Loans microservice REST API Documentation", version = "v1", contact = @Contact(name = "Madan Reddy", email = "tutor@eazybytes.com", url = "https://www.loans.com"), license = @License(name = "Apache 2.0", url = "https://www.loans.com")), externalDocs = @ExternalDocumentation(description = " Loans microservice REST API Documentation", url = "https://www.loans.com/swagger-ui.html"))
 public class LoansApplication {
 
 	public static void main(String[] args) {
